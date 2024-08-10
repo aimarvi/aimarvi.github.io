@@ -29,7 +29,7 @@
           <li><a href="pubs.html">pubs</a></li>
           <li><a href="cv.html">cv</a></li>
           <li><a id="fake-link" href="#">email</a></li>
-          <li><a href="https://github.com/aimarvi">code</a></li>
+          <li><a href="https://github.com/aimarvi">git</a></li>
           <li><a href="https://twitter.com/amarvi_">twitter</a></li>
         </ul>
       </div>
@@ -51,16 +51,18 @@
   </body>
   <script>
     function makeOnClick() {
-      let toggle = false;
+      let toggle = 0;
       return (event) => {
-        toggle = !toggle;
-        if (toggle) {
+        toggle++;
+        if (toggle % 2 === 1) {
           event.target.innerHTML = "amarvi [at] mit [dot] edu";
-        } else {
+        } else if (toggle % 2 === 0) {
+          window.location.href = "mailto:amarvi@mit.edu";
           event.target.innerHTML = "email";
         }
       };
     }
+
     let link = document.getElementById("fake-link");
     link.addEventListener("click", makeOnClick());
   </script>
