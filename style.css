@@ -132,3 +132,31 @@ a:hover::before {
         flex-direction: column;
     }
 }
+
+#hide {
+  display: inline-block;
+  max-width: 0%;
+  vertical-align: bottom;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: max-width 5s ease-in-out;
+}
+
+.expanded #hide {
+  max-width: 100%;
+  transition-delay: 1s;
+}
+
+@keyframes blink {
+  0% { opacity: 0.7; }
+  50% { opacity: 0; }
+  100% { opacity: 0.7; }
+}
+
+.cursor {
+  display: inline-block;
+  width: 3px; /* Adjust width as needed */
+  height: 0.95em; /* Adjust height as needed */
+  background-color: var(--c2); /* Adjust color as needed */
+  animation: blink 1.5s step-start infinite;
+}
