@@ -38,11 +38,13 @@ canvas {
     margin-top: 10vh;
 }
 
+/*
 .header h1 {
     font-size: 2.5em;
     font-weight: normal;
     font-family: 'neue-haas-grotesk-display', monospace;
 }
+*/
 
 .main {
     display: flex;
@@ -159,4 +161,32 @@ a:hover::before {
   height: 0.95em; /* Adjust height as needed */
   background-color: var(--c2); /* Adjust color as needed */
   animation: blink 1.5s step-start infinite;
+}
+
+.typewriter {
+  font-size: 2.5em; /* Keep the font size */
+  font-weight: normal;
+  font-family: 'neue-haas-grotesk-display', monospace;
+
+  display: inline-block;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .1em solid var(--c2); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0;
+  letter-spacing: 0.1em;
+  animation: 
+    typing 2.5s steps(13, end) forwards,
+    blink-caret 1.25s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 13ch }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--c2) }
 }
