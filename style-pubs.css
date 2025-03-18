@@ -6,8 +6,8 @@
 }
 
 :root {
-    --c1: #750014;
-    --c2: #750014;
+    --acc: #1e1e1e;
+    --acc2: #a51c30;
 }
 
 body {
@@ -22,7 +22,7 @@ body {
 }
 
 .me {
-    color: var(--c2);
+    color: var(--acc);
     font-weight: bold;
 }
 
@@ -46,15 +46,15 @@ p {
 
 a {
     position: relative;
-	color: var(--c1);
+	color: var(--acc);
 	text-decoration: none;
     padding-bottom: .35em;
-    font-size: 1.3em
+    font-size: 1.3em;
 }
 
 a::before {
     content: "";
-    background-color: var(--c2);
+    background-color: var(--acc);
     position: absolute;
     width: 100%;
     left: 0;
