@@ -119,7 +119,7 @@ a:hover::before {
 
 .blurb p {
     margin-left: 4%;
-    font-size: 1em;
+    font-size: 1.05em;
     word-spacing: 3px;
     line-height: 2.2;
 }
