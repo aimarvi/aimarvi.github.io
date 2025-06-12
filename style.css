@@ -16,12 +16,16 @@ hr {
 }
 
 body {
+    font-family: 'neue-haas-grotesk-display', monospace;
+/*
     font-family: 'swear-text', serif;
     font-style: 'normal';
+*/
     font-weight: 500;
     animation-name: fadein;
     animation-duration: 1s;
     background-color: var(--bg);
+    font-size: 1.05em;
 }
 
 canvas {
@@ -70,7 +74,10 @@ canvas {
 }
 
 .sidebar li {
-    font-size: 1em;
+    font-family: 'swear-text-cilati', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2em;
     margin-top: .6em;
     margin-bottom: .6em;
     text-align: right;
@@ -92,8 +99,9 @@ a {
 .blurb a {
     color: var(--acc);
     font-family: 'swear-text-cilati', sans-serif;
-    font-weight: 800;
+    font-weight: 600;
     font-style: normal;
+    font-size: 1.2em;
 }
 
 a::before {
@@ -168,17 +176,39 @@ a:hover::before {
   animation: blink 1.5s step-start infinite;
 }
 
+.name {
+/*
+  font-family: 'roboto-mono', monospace;
+*/
+  font-family: 'swear-text-cilati', sans-serif;
+  font-style: 'normal';
+  font-weight: 600;
+
+  font-size: 4em; /* Keep the font size */
+
+  display: inline-block;
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0;
+}
+
 .typewriter {
-  font-size: 2.5em; /* Keep the font size */
-  font-weight: normal;
-  font-family: 'neue-haas-grotesk-display', monospace;
+/*
+  font-family: 'roboto-mono', monospace;
+*/
+  font-family: 'swear-text-cilati', sans-serif;
+  font-style: 'normal';
+  font-weight: 600;
+
+  font-size: 5em; /* Keep the font size */
 
   display: inline-block;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .1em solid var(--acc); /* The typwriter cursor */
+  border-right: .05em solid var(--acc); /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0;
-  letter-spacing: 0.1em;
+/*
+  letter-spacing: 0.3em;
+*/
 
   animation: blink-caret 1.25s step-end infinite;
 }
