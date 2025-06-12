@@ -16,10 +16,11 @@ hr {
 }
 
 body {
-    font-family: 'neue-haas-grotesk-display', monospace;
+    font-family: 'swear-text', serif;
+    font-style: 'normal';
+    font-weight: 500;
     animation-name: fadein;
     animation-duration: 1s;
-    font-weight: 500;
     background-color: var(--bg);
 }
 
@@ -90,7 +91,9 @@ a {
 
 .blurb a {
     color: var(--acc);
-    font-weight: 600;
+    font-family: 'swear-text-cilati', sans-serif;
+    font-weight: 800;
+    font-style: normal;
 }
 
 a::before {
