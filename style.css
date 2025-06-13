@@ -12,6 +12,7 @@
 
 hr {
     background-color: var(--acc);
+    margin-top: 50px;
     height: 1px;
 }
 
@@ -193,8 +194,11 @@ a:hover::before {
 
   font-size: 4.5em; /* Keep the font size */
 
-  display: inline-block;
-  white-space: nowrap; /* Keeps the content on a single line */
+  display: block;
+  line-height: 1em;
+/*
+  white-space: nowrap;
+*/
   margin: -4vh;
 }
 
