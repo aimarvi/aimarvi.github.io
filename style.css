@@ -16,15 +16,16 @@ hr {
 }
 
 body {
-    font-family: 'neue-haas-grotesk-display', monospace;
+    font-family: 'neue-haas-grotesk-text', sans-serif;
 /*
     font-family: 'swear-text', serif;
     font-style: 'normal';
 */
-    font-weight: 500;
+    font-weight: 400;
     animation-name: fadein;
     animation-duration: 1s;
     background-color: var(--bg);
+    line-height: 2.1;
     font-size: 1.05em;
 }
 
@@ -78,9 +79,16 @@ canvas {
     font-style: normal;
     font-weight: 600;
     font-size: 1.2em;
+    word-spacing: 3px;
+/*
     margin-top: .6em;
     margin-bottom: .6em;
+*/
     text-align: right;
+}
+
+.sidebar li .light {
+    font-weight: 400; /* or try 400 if 300 is too light */
 }
 
 .sidebar img {
@@ -99,7 +107,7 @@ a {
 .blurb a {
     color: var(--acc);
     font-family: 'swear-text-cilati', sans-serif;
-    font-weight: 600;
+    font-weight: 800;
     font-style: normal;
     font-size: 1.2em;
 }
@@ -132,7 +140,6 @@ a:hover::before {
     margin-left: 4%;
     font-size: 1.05em;
     word-spacing: 3px;
-    line-height: 2.2;
 }
 
 @media (max-width: 900px) {
@@ -182,13 +189,13 @@ a:hover::before {
 */
   font-family: 'swear-text-cilati', sans-serif;
   font-style: 'normal';
-  font-weight: 600;
+  font-weight: 500;
 
-  font-size: 4em; /* Keep the font size */
+  font-size: 4.5em; /* Keep the font size */
 
   display: inline-block;
   white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0;
+  margin: -4vh;
 }
 
 .typewriter {

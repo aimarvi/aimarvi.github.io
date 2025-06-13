@@ -36,10 +36,7 @@
       </div>
       <div class="blurb">
         <p>
-          hello !
-        </p>
-        <p>
-           My name is Ammar. I'm a lab tech working with <a href='http://web.mit.edu/bcs/nklab/'>Nancy Kanwisher</a> at MIT. My work gets at trying to understand the functional organization of the brain using a mix of neuroimaging and computational modeling. I have a lot of fun and am incredibly lucky that I get to do this every day (and get paid for it!). See my <a href='https://aimarvi.github.io/pubs.html'>publications</a> to get a sense of my most recent work. 
+           Hello, my name is Ammar! I'm a lab tech working with <a href='http://web.mit.edu/bcs/nklab/'>Nancy Kanwisher</a> at MIT. My work gets at trying to understand the functional organization of the brain using a mix of neuroimaging and computational modeling. I have a lot of fun and am incredibly lucky that I get to do this every day (and get paid for it, too!). See my <a href='https://aimarvi.github.io/pubs.html'>publications</a> to get a sense of my most recent work. 
         </p>
         <p> 
           This fall I'll be starting my PhD with <a href='https://konklab.fas.harvard.edu/'>Talia Konkle</a> & <a href='https://visionlab.harvard.edu/george/'>George Alvarez</a> at Harvard University. In my graduate research, I plan to use computational and empirical methods to answer questions about the brain's functional landscape. Specifically, I want to understand the consequences of functional architecture and task objective in shaping high-level perception in the brain & mind. How can we develop constrained models of human perception that accurately capture both neural and behavioral responses? And how do complex perceptual mechanisms emerge from more simple, basic principles? All of this in service of understanding the principles underlying biological & artifical intelligence.
@@ -56,7 +53,10 @@
       return (event) => {
         toggle++;
         if (toggle % 2 === 1) {
-          event.target.innerHTML = "amarvi [at] mit [dot] edu";
+          event.target.innerHTML = 'amarvi <span class="light">[at]</span> mit <span class="light">[dot]</span> edu';
+/*
+          event.target.innerHTML = '<span class="light">amarvi</span> [at] <span class="light">mit</span> [dot] <span class="light">edu</span>';
+*/
         } else if (toggle % 2 === 0) {
           window.location.href = "mailto:amarvi@mit.edu";
           event.target.innerHTML = "email";
