@@ -10,26 +10,33 @@
     --acc2: #a51c30;
 }
 
+/* debug
+* {
+    outline: 1px solid red;
+}
+*/
 body {
-	font-family: 'neue-haas-grotesk-display', monospace;
-	animation-name: fadein;
-	animation-duration: 0.5s;
-    font-weight: 500;
+    font-family: 'neue-haas-grotesk-text', sans-serif;
+    animation-name: fadein;
+    animation-duration: 0.5s;
+    font-weight: 400;
 }
 
 .contribution-note {
-    font-size: 1em;
+    word-spacing: 0.25em;
+    padding-bottom: 2vh;
 }
 
 .me {
     color: var(--acc);
-    font-weight: bold;
+    font-weight: 700;
+    font-family: 'neue-haas-grotesk-text';
 }
 
 table {
     margin-left: 5vh;
-    margin-top: 10vh;
-    width: 60%;
+    margin-top: 7vh;
+    width: 100%;
     border-collapse: separate;
     border-spacing: 2vw .5vh;
 }
@@ -39,17 +46,18 @@ td {
 }
 
 p {
-    line-height: 1.9;
-    font-size: 1em;
-    word-spacing: 3px;
+    line-height: 1.75;
+    word-spacing: 0.25em;
 }
 
 a {
+    font-family: 'neue-haas-grotesk-display', sans-serif;
     position: relative;
-	color: var(--acc);
-	text-decoration: none;
-    padding-bottom: .35em;
-    font-size: 1.3em;
+    color: var(--acc);
+    text-decoration: none;
+    padding-bottom: .25em;
+    font-size: 1.2em;
+    font-weight: 600;
 }
 
 a::before {
