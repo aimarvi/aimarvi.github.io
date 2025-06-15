@@ -10,9 +10,15 @@
     --bg: #ffffff;
 }
 
+/* debug
+* {
+    outline: 1px solid red;
+}
+*/
+
 hr {
     background-color: var(--acc);
-    margin-top: 50px;
+    margin-top: -45px;
     height: 1px;
 }
 
@@ -199,7 +205,8 @@ a:hover::before {
 /*
   white-space: nowrap;
 */
-  margin: -4vh;
+  margin-top: -4vh;
+  margin-left: -4vh;
 }
 
 .typewriter {
